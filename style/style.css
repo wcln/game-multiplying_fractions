@@ -52,8 +52,7 @@ input#answer {
   text-align: center;
 }
 
-button#check {
-  background-color: #36afe2;
+button {
   border: none;
   color: white;
   padding: 10px 20px;
@@ -64,6 +63,15 @@ button#check {
   cursor: pointer;
   margin-right: 1em;
   margin-bottom: 1em;
+}
+
+button#check {
+  background-color: #36afe2;
+}
+
+button#reset {
+  background-color: #666666;
+  display: none;
 }
 
 .footer {
@@ -150,4 +158,8 @@ button#check {
   position: absolute;
   bottom: 1.5em;
   left: 1em;
+}
+
+button[disabled] {
+  opacity: 0.5;
 }

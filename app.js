@@ -1,25 +1,32 @@
-
 var questions = [];
 var SQUARE_SIZE = 50;
-
-var questionCounter = 0;
+var questionCounter;
 
 function init() {
 
   let version = new URL(window.location.href).searchParams.get("version");
+
+  questionCounter = 0;
+  $("#reset").css("display", "none");
+  $("#check").css("display", "inline-block");
+  $("#check").attr("disabled", false);
+  $("#answer").attr("disabled", false);
+  $(".feedback").html('');
+  $('.feedback, #answer').removeClass('incorrect correct');
+  $('#answer').val('');
 
   if (version !== null) {
     $.getJSON("versions/" + version + ".json", function(json) {
       questions = json.questions;
 
       loadQuestion();
+
     });
   } else {
     alert("No version set!");
   }
 
   $('#answer').on("input", function() {
-    console.log('here');
     $(this).removeClass('incorrect correct');
     $('.feedback').removeClass('incorrect correct');
     $('.feedback').html("");
@@ -92,5 +99,11 @@ function check() {
 }
 
 function end() {
-  alert("Game over!");
+  $("#answer").attr("disabled", true);
+
+  $("#check").css("display", "none");
+  $("#reset").css("display", "inline-block");
+
+
+  $(".feedback").html("Quiz complete! Great work.");
 }
