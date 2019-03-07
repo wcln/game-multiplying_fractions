@@ -23,7 +23,9 @@ function init() {
 
     });
   } else {
-    alert("No version set!");
+    $(".feedback").html("No version set! Unable to load the media.");
+    $(".equation").css("display", "none");
+    $("#check").attr("disabled", true);
   }
 
   $('#answer').on("input", function() {
