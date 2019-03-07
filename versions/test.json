@@ -1,0 +1,19 @@
+{
+  "questions":[
+    {
+      "numerator": 4,
+      "denominator": 5,
+      "wholeNumber": 5
+    },
+    {
+      "numerator": 4,
+      "denominator": 6,
+      "wholeNumber": 30
+    },
+    {
+      "numerator": 5,
+      "denominator": 10,
+      "wholeNumber": 10
+    }
+  ]
+}

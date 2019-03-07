@@ -1,0 +1,153 @@
+#container {
+  border: 1px solid black;
+  border-radius: 2px;
+  position: relative;
+  text-align: center;
+  font-family: "Century Gothic", Arial;
+  min-height: 300px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+#container img#logo {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 30px;
+}
+
+.equation {
+  font-size: 30px;
+}
+
+.fraction {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  letter-spacing: 0.001em;
+  text-align: center;
+}
+
+.fraction span.numerator {
+  display: block;
+  padding: 0.1em;
+}
+
+.fraction span.denominator {
+    border-top: thin solid black;
+}
+.fraction span.symbol {
+    display: none;
+}
+
+input#answer {
+  width: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+button#check {
+  background-color: #36afe2;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.footer {
+  text-align: right;
+}
+
+.grid {
+  font-size: 0;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid .square {
+  background-color: #cecece;
+  border: 1px solid black;
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+}
+
+.grid .square.colored {
+  background-color: #e27a36;
+}
+
+.grid .square .number {
+  line-height: 50px;
+}
+
+.grid .line-top {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  height: 10px;
+  margin: 0 auto 6px auto;
+  position: relative;
+}
+
+.grid .line-top .number {
+  position: absolute;
+  top: -26px;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+}
+
+.grid .line-bottom {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  height: 10px;
+  margin: 6px auto 0 0;
+  position: relative;
+}
+
+.grid .line-bottom .number {
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  font-family: Arial;
+}
+
+.feedback {
+  display: inline-block;
+  margin-right: .5em;
+}
+
+.correct {
+  color: #31bf4b;
+}
+
+#answer.correct {
+  background-color: #31bf4b;
+  color: white;
+}
+
+.incorrect {
+  color: #bf3131;
+}
+
+#container .questionCounter {
+  position: absolute;
+  bottom: 1.5em;
+  left: 1em;
+}
