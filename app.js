@@ -33,6 +33,13 @@ function init() {
     $('.feedback').removeClass('incorrect correct');
     $('.feedback').html("");
   });
+
+  $('#answer').on("keyup", function(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      $("#check").click();
+    }
+  });
 }
 
 function loadQuestion() {
