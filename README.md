@@ -1,1 +1,1 @@
-# wcln-game_multiplying_fractions
+# Multiplying fractions game
