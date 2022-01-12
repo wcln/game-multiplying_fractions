@@ -1,0 +1,55 @@
+{
+  "questions":[
+    {
+      "numerator": 4,
+      "denominator": 5,
+      "wholeNumber": 5
+    },
+    {
+      "numerator": 4,
+      "denominator": 6,
+      "wholeNumber": 30
+    },
+    {
+      "numerator": 5,
+      "denominator": 10,
+      "wholeNumber": 10
+    },
+ {
+      "numerator": 2,
+      "denominator": 3,
+      "wholeNumber": 6
+    },
+{
+      "numerator": 5,
+      "denominator": 7,
+      "wholeNumber": 42
+    },
+{
+      "numerator": 4,
+      "denominator": 9,
+      "wholeNumber": 81
+    },
+{
+      "numerator": 2,
+      "denominator": 5,
+      "wholeNumber": 60
+    },
+{
+      "numerator": 5,
+      "denominator":8,
+      "wholeNumber": 48
+    },
+{
+      "numerator": 7,
+      "denominator": 8,
+      "wholeNumber": 24
+    },
+{
+      "numerator": 8,
+      "denominator": 9,
+      "wholeNumber": 63
+    }
+
+  ]
+}
